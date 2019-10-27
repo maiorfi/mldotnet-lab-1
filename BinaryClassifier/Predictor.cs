@@ -7,8 +7,6 @@ namespace BinaryClassifier
 {
     public class Predictor
     {
-        private const string DATA_PATH = @"C:\Progetti\Lab\NetCore\ML\BinaryClassificationSample\data\yelp_labelled.txt";
-
         MLContext _mlContext = new MLContext();
 
         private IDataView _allData;
@@ -19,9 +17,9 @@ namespace BinaryClassifier
         private ITransformer _model;
         
 
-        public void LoadTestData()
+        public void LoadTestData(string dataFilePath)
         {
-            _allData = _mlContext.Data.LoadFromTextFile<SentimentData>(DATA_PATH, hasHeader: false);
+            _allData = _mlContext.Data.LoadFromTextFile<SentimentData>(dataFilePath, hasHeader: false);
 
             var trainingSplitData = _mlContext.Data.TrainTestSplit(_allData, testFraction: 0.2);
             
