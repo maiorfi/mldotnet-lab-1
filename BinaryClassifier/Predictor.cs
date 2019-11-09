@@ -17,7 +17,7 @@ namespace BinaryClassifier
         private ITransformer _model;
         
 
-        public void LoadTestData(string dataFilePath)
+        public void LoadTrainData(string dataFilePath)
         {
             _allData = _mlContext.Data.LoadFromTextFile<SentimentData>(dataFilePath, hasHeader: false);
 

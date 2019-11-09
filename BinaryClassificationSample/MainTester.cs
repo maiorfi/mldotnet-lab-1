@@ -31,7 +31,7 @@ namespace BinaryClassificationSample
 
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
             predictor.BuildAndTrainModel();
             var metrics = predictor.EvaluateModelMetrics();
             
@@ -51,7 +51,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
@@ -72,7 +72,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"yelp_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
@@ -91,7 +91,7 @@ namespace BinaryClassificationSample
 
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
             predictor.BuildAndTrainModel();
             var metrics = predictor.EvaluateModelMetrics();
             
@@ -111,7 +111,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
@@ -132,7 +132,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"amazon_cells_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
@@ -153,7 +153,7 @@ namespace BinaryClassificationSample
 
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
             predictor.BuildAndTrainModel();
             var metrics = predictor.EvaluateModelMetrics();
             
@@ -173,7 +173,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
@@ -194,7 +194,7 @@ namespace BinaryClassificationSample
             
             var predictor = new Predictor();
             
-            predictor.LoadTestData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
+            predictor.LoadTrainData(Path.Combine(_dataFolderPath,"imdb_labelled.txt"));
             predictor.BuildAndTrainModel();
 
             var predictionTuple = predictor.Predict(INPUT_DATA);
